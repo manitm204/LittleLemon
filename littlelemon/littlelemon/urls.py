@@ -21,4 +21,6 @@ from restaurant import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('restaurant/', include('restaurant.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
+    path("auth/", include('djoser.urls.authtoken')),
 ]
